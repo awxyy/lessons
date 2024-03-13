@@ -1,0 +1,39 @@
+@import url("reset.css");
+
+
+
+.fact {
+    color: blue;
+}
+h1{
+    color: yellowgreen;
+}
+
+.list > li {
+   
+    color: brown;
+		
+}
+
+#independence,
+#geography,
+#language{
+    color: blue;
+}
+
+.poet > p{
+    color: magenta;
+}
+
+.break + div{
+    color: maroon;
+}
+
+[class*="__item"]{
+	color: orange;
+}
+
+
+.meny-tp{
+    color: mediumseagreen;
+}
