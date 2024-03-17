@@ -1,0 +1,138 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+*{
+    text-align:center;
+}
+
+.header__title{
+    font-family: "Timmana" , fantasy;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(49, 52, 79, 1);
+}
+
+.menu {
+    text-shadow: 3px 3px 3px darkcyan;
+	font-family: "Madimi One" , fantasy;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(49, 79, 74, 1);
+}
+
+[class*="__block"]{
+	text-align: left; 
+}
+
+.kurapika__title{ 
+    text-decoration-color:darkgoldenrod;
+}
+
+.torfin__title{
+    text-decoration-color:darkcyan;
+}
+
+[class*="__title"]{
+    text-transform:uppercase;
+    text-decoration: underline;
+    text-decoration-style :double;
+	font-family: "Timmana" ;
+    font-size: 25px;
+    font-weight: 900;
+    color: darkred;
+    text-shadow: 3px 3px 3px darkred;  
+}
+
+[class*="__block1"]{
+	font-family: "La Belle Aurore" ;
+    font-size: 20px;
+    font-weight: 400;
+    color: darkslateblue;
+    font-style: oblique; 
+    text-shadow: 3px 3px 3px purple;
+}
+
+[class*="__block2"]{
+	font-family: "Jim Nightshade" ;
+    font-size: 20px;
+    font-weight: 600;
+    color: darkgrey;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 1.5px;
+}
+
+[class*="__block3"]{
+	font-family: "Walter Turncoat" ;
+    font-size: 20px;
+    font-weight: 800;
+    color: darkgreen;
+    text-shadow: 3px 3px 3px darkseagreen;
+    word-spacing: 40px;
+}
+
+[class*="__block4"]{
+	font-family: "Farsan" ;
+    font-size: 20px;
+    font-weight: 900;
+    color: darkseagreen;
+    text-shadow: 3px 3px 3px darkolivegreen;
+}
+
+.how-to-chose-bed__header{
+    color: #2b2929;
+    font-size: 40px;
+    font-family: "Proxima Nova Lt";
+    line-height: 120%;
+    font-weight: 600px;
+    text-shadow:  4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info{
+    font-family:"Proxima Nova Rg";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+
+.living-room__header{
+    color: #2b2929;
+    font-size: 40px;
+    font-family: "Proxima Nova Lt";
+    line-height: 120%;
+    font-weight: 600px;
+}	
+
+.living-room__text{
+    font-family:"Proxima Nova Rg";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.list-living-room__header{
+    font-family: "Proxima Nova Lt";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.list-living-room-info{   
+    font-family:"Proxima Nova Rg";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.living-room__conclusion{
+    font-family:"Proxima Nova Rg";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.menu-back{
+    font-size: 40px;
+    font-family:"Proxima Nova Rg";
+}
