@@ -1,0 +1,196 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+*{
+    font-family: "Proxima Nova";
+}
+
+
+.caption{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption__title{
+    font-family: "Timmana" , fantasy;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgba(49, 52, 79, 1);
+}
+
+.how-to-chose-bed{
+    margin: 70px auto;
+    max-width: 960px;
+}
+
+.how-to-chose-bed__header{
+    color: #2b2929;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-shadow:  4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+.info{
+    font-size: 0;
+}
+
+.info__text{
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.living-room{
+    margin: 0 auto;
+    max-width: 1070px;
+    margin-bottom: 60px;
+    
+}
+.living-room__wrapper{
+   font-size: 0px;
+}
+.living-room__header{
+    font-weight: 600;
+    color: #2b2929;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0 0 40px 0;
+ 
+}
+
+.living-room__img{
+    margin: 0 0 40px 0;
+}
+
+.living-room__text{
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    margin: 0 0 40px 0;
+}
+.living-room__text p{
+    margin: 0 0 20px 0;
+}
+
+.list-living-room__header{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0 0 30px 0;
+}
+
+.roster{
+    font-family: "Proxima Nova", sans-serif;
+    padding-left:47px;
+}
+
+.roster__item{
+    margin: 0 0 20px 0;
+}
+
+.roster-item-last{
+    margin: 0 0 40px 0;
+}
+
+.list-living-room-info{ 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.living-room__conclusion{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.krovato__wrap{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.krovato__title h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2b2929;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.krovato-list{
+    font-size: 0; 
+    margin: 0 -15px;
+}
+
+.krovato__list{
+    margin-bottom: 70px;
+}
+
+.krovato-item{
+    font-size: 0;
+    vertical-align:top;
+    padding: 0 15px;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+}
+
+.krovato-item__title{
+    font-size: 26px;
+    color: #2b2929;
+    font-weight: 600;
+    line-height: 1.30769;
+}
+
+.krovato-item__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 187%;
+    text-align: center;
+}
+
+.krovato-item img,h3{
+    margin:0 0  20px 0;
+}
+
+.discount {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.discount__wrapper {
+    font-size: 0px;
+    text-align: center;
+ }
+
+.discount__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin: 0  0 60px 0 ;
+}
+
+.discount__list {
+    margin: 0  0 60px 0 ;
+}
+
+.discount-img-items {
+    margin: 0 -12px;
+}
+
+.discount-img-item {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 40px;
+}

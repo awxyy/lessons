@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('../fonts/LaBelleAurore.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: 
+        url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: 
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
