@@ -1,0 +1,200 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+*{
+    font-family: "Proxima Nova";
+}
+
+
+.caption{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption__title{
+    font-family: "Timmana" , fantasy;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgba(49, 52, 79, 1);
+}
+
+.living-room{
+    margin: 0 auto;
+    max-width: 1074px;
+    margin-bottom: 60px;
+    
+}
+
+.living-room__wrapper{
+   font-size: 0px;
+}
+
+.living-room__header{
+    font-weight: 600;
+    color: #2b2929;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0 0 40px 0;
+ 
+}
+
+.living-room__img{
+    margin: 0 0 40px 0;
+}
+
+.living-room__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    margin: 0 0 40px 0;
+}
+
+.living-room__text p{
+    margin: 0 0 20px 0;
+}
+
+.list-living-room__header{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0 0 30px 0;
+}
+
+.roster{
+    font-size: 0px;
+}
+
+.roster__item{
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    margin: 0 0 20px 0;
+    background: url("../img/mark-list.png") 0 0 / 32px no-repeat;
+    padding-left:47px;
+    min-height: 31px;
+}
+
+.roster-item-last{
+    margin: 0 0 40px 0;
+}
+
+.living-room__conclusion{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+.collection {
+    font-family: "Roboto";
+    background:  url("../img/flower-pattern.png") center / contain no-repeat;
+    margin-bottom: 70px;
+}
+
+.collection__wrapper {
+    font-size: 0px;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.collection-item-first {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 90px;
+    max-width: 686px;
+    padding: 74px 0px 124px 0px;
+}
+
+.collection-item-first__title {
+    color: #000;
+    font-size: 74px;
+    line-height: 74%;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin:  0px 0px 52px 0px; 
+}
+
+.collection-item-first__subtitle {
+    margin:  0px 0px 66px 0px; 
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 183%;
+    text-transform: capitalize;
+}
+
+.collection-item-first__button {
+    font-weight: 400;
+    font-size: 29px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #000;
+    padding: 19px 26px;
+}
+
+.collection-item-secong {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 442px;
+    border-radius: 160px 0px ;
+    border: 2px solid rgba(62,59,59,0.2);
+    
+}  
+
+.collection-item-secong__img {
+    margin: -20px 18px 20px -18px;
+}
+
+.subject {
+    color: white;
+    background: linear-gradient(180deg, rgba(155,71,224,1) 0%, rgba(138,81,239,1));
+}
+
+.subject__wrapper {
+    font-size: 0px;
+    margin: 0 auto;
+    width: 1280px;
+    background:  url("../img/alphabet_patterns.png")  right /contain no-repeat;
+}
+
+.subject-item-first {
+    width: 600px;
+    display: inline-block;
+    padding: 121px 0px;
+    margin-right: 133px
+}
+
+.subject-item-first__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.subject-item-first__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+
+.subject-item-first__button{
+    color: black;
+    border-radius: 8px;
+    padding: 11px 20px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 156%;
+}
+
+.subject-item-secong {
+    width: 547px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.footer{
+    text-align: center;
+    font-size: 40px;
+}
