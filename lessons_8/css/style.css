@@ -1,0 +1,113 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+
+body{
+    background-color:  black;
+    color: whitesmoke;
+}
+.caption{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption__title{
+    font-family: "Timmana" , fantasy;
+    font-size: 55px;
+    font-weight: 900;
+    /*color: rgba(49, 52, 79, 1);*/
+}
+.footer__item{
+    padding: 70px;
+    text-align: center;
+}
+
+.footer__item a{
+    border: 1px grey solid;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 40px;
+    
+}
+.footer__item a:hover{
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px white ,
+   inset 2px 2px 2px white ;
+}
+
+.block{
+    font-family: "Timmana" , fantasy;
+    font-size: 50px;
+}
+
+.block__wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.block__svg{
+    margin-bottom: 60px;
+} 
+
+.svg-block-item{
+    margin: 15px;
+    padding: 15px;
+    border: 1px grey solid;
+    border-radius: 30px;
+   
+}
+.svg-block-item:hover{
+   box-shadow: 2px 2px 2px white ,
+   inset 2px 2px 2px white ;
+}
+.svg-block-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.webp-block-textb{
+    text-align: center;
+}
+h2{
+    display: inline-block;
+}
+.webp-block-textb::after{
+    display: inline-block;
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image:url("../img/arrow-up.svg") ;
+    color: white;
+}
+
+.webp-block-imgb{
+    display: inline-block;
+}
+.svg-block-text{
+    padding: 20px 0px;
+    vertical-align:bottom;
+    display: inline-block;
+}
+
+.svg-block-img{
+    vertical-align: center;
+    display: inline-block;
+}
+
+.svg-block-img_style{
+    padding:30px;
+}
+.svg-block-img_style::before{
+    
+    content: "";
+    width: 50px;
+    height: 50px;
+    padding-right: 47px;
+    background-image: url("../img/svg-icon.svg");
+}
+.arrow::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    padding-right: 47px;
+    background-image:url("../img/arrow-up.svg") ;
+}
