@@ -9,6 +9,7 @@
 }
 
 .caption__title{
+    line-height: 126%;
     font-family: "Timmana" , fantasy;
     font-size: 55px;
     font-weight: 900;
