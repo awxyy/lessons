@@ -1,0 +1,218 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+
+
+.caption{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption__title{
+    font-family: "Timmana" , fantasy;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgba(49, 52, 79, 1);
+}
+.footer__item{
+    padding: 70px;
+    text-align: center;
+}
+
+.footer__item a{
+    border: 1px grey solid;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 40px;
+    
+}
+.footer__item a:hover{
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black,
+   inset 2px 2px 2px black   ;
+}
+
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+
+
+.bed__container{
+    font-size: 0;
+    width: 250px;
+    background-color: #F8F8F8;
+    position: relative;
+
+}
+.bed__arrow--pos{
+    bottom: 20px ;
+    right: 20px;
+    position: absolute;
+}
+.bed__arrow--pos:hover{
+    bottom: 20px ;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.bed__text{
+    font-family: "Proxima Nova" , fantasy;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+}
+.bed__title--pos{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+}
+.bed__title:hover{
+    color: orange;    
+}
+
+.bed__size--pos{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    color: grey;
+}
+
+
+.catalog{
+    border-radius: 8px;
+    background-color: #ffbc57;
+    display: inline-block;
+}
+
+
+.catalog__container{
+    
+    display: inline-block;
+    
+
+}
+
+.catalog__btn{
+    color: #F8F8F8;
+    padding: 11px 20px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 126%;
+}
+.catalog__btn::before{
+    margin-right: 10px;
+    vertical-align: middle;
+    content:"";
+    width: 24px;
+    height: 24px;
+    background: url("../img/menu.svg") no-repeat;
+}
+.catalog__btn:hover::before{
+   
+    background: url("../img/close-catalog.svg") no-repeat;
+}
+
+.menu{
+    border-radius: 8px;
+    width: 300px;
+    margin-left: 150px;
+    background-color: rgb(250,250,250);
+    position: relative;
+    display: none;
+
+}
+.menu:target{
+    display: block;
+    
+}
+.list-menu{
+    position: relative;
+    width: 300px;
+    padding: 8px 0px;
+
+}
+.list-menu--pos:hover::after{
+    position: absolute;
+    top: 0px;
+    left:295px;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #ffbc57;
+}
+
+.list-menu__item{
+   
+    width: 300px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    vertical-align: middle;
+    padding:10px 15px 10px 30px ;
+}
+.list-menu__item:hover{
+    background-color: #ffbc57;
+
+}
+
+.list-menu__item:hover .sub-menu{
+    opacity: 1;
+	visibility: visible;
+}
+.list-menu__img{
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.list-menu__item::after{
+    content:"";
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url("../img/arrow-yellow.svg") no-repeat;
+}
+.list-menu__item:hover:after{
+    background: url("../img/arrow-black.svg") no-repeat;
+}
+.list-menu__text{
+    width: 160px;
+}
+
+
+.sub-menu--pos{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.sub-menu{
+    height: 100%;
+    font-size: 0;
+    opacity: 0;
+	visibility: hidden;
+}
+
+.sub-menu__list{
+    overflow: auto;
+    height: 100%;
+    padding-left:30px;
+}
+
+.sub-menu__item{
+    width: 300px;
+    color: #2b2929;
+    font-family: "Proxima Nova" , fantasy;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 211%;
+}
+.sub-menu__item:hover{
+  color: #ffbc57;
+}
