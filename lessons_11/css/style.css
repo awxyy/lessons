@@ -95,8 +95,8 @@ body{
 
 
 .tran2d__item--scale:hover:after{
-    content: "transform: scale(120%);";
-    transform: scale( 120% );
+    content: "transform: scale(1.2);";
+    transform: scaleX( 1.2 );
 }
 .tran2d__item--scale2:hover:after{
     content: "transform: scale( 1.5);";
@@ -127,8 +127,8 @@ body{
 }
 
 .tran2d__item--matrix:hover:after{
-    content: "  transform: translate(20px, 40px) scale(120% ) rotate(35deg) skew(-30deg, 10deg)";
-    transform: translate(20px, 40px) scale(120% ) rotate(35deg) skew(-30deg, 10deg);
+    content: "  transform: translate(20px, 40px) scale(1.2 ) rotate(35deg) skew(-30deg, 10deg)";
+    transform: translate(20px, 40px) scale(1.2 ) rotate(35deg) skew(-30deg, 10deg);
 }
 .tran2d__item--origin:hover:after{
     content: " transform-origin: 0 0";
@@ -194,27 +194,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .car{
     height: 500px;
     width: 1150px;
@@ -272,7 +251,7 @@ body{
 .car__disk--pos:nth-child(2){
     transform-origin: 70px 10px;
     transform: translate(35px ,5px);
-    rotate: 50deg;
+    transform: rotate (50deg);
     position: absolute;
     top: 35px;
     right: 40px;
@@ -284,7 +263,7 @@ body{
 .car__disk--pos:nth-child(3){
     transform-origin: 75px 10px;
     transform: translate(35px ,5px);
-    rotate: 120deg;
+    transform: rotate (120deg);
     position: absolute;
     top: 35px;
     right: 40px;
