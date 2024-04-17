@@ -97,8 +97,8 @@ body{
 
 
 .tran2d__item--scale:hover:after{
-    content: "transform: scale(120%);";
-    transform: scale( 120% );
+    content: "transform: scale(1.2);";
+    transform: scale( 1.2 );
 }
 .tran2d__item--scale2:hover:after{
     content: "transform: scale( 1.5);";
@@ -129,8 +129,8 @@ body{
 }
 
 .tran2d__item--matrix:hover:after{
-    content: "  transform: translate(20px, 40px) scale(120% ) rotate(35deg) skew(-30deg, 10deg)";
-    transform: translate(20px, 40px) scale(120% ) rotate(35deg) skew(-30deg, 10deg);
+    content: "  transform: translate(20px, 40px) scale(1.2 ) rotate(35deg) skew(-30deg, 10deg)";
+    transform: translate(20px, 40px) scale(1.2 ) rotate(35deg) skew(-30deg, 10deg);
 }
 .tran2d__item--origin:hover:after{
     content: " transform-origin: 0 0";
