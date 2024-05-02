@@ -281,7 +281,9 @@ body{
     right: 0px;
     animation: run 2.4s linear infinite  alternate  ;
 }
-
+.figure-cat-second:hover{
+  animation-play-state: paused;
+}
 @keyframes run {
     0% { 
         transform: translateX(0px);
