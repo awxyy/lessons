@@ -1,0 +1,408 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body{
+     background-color: black;
+}
+
+.caption{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caption__title{
+    line-height: 3;
+    font-family: "Timmana" , fantasy;
+    font-size: 40px;
+    font-weight: 900;
+    color: #75000054;
+}
+.tran2d{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.tran2d__item{
+    background-color: rgba(27, 27, 27, 0.205);
+    display: inline-block;  
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.tran2d__item--mergin,
+.tran3d__item--mergin
+:not(:last-child){
+    margin-right: 20px;
+}
+
+.tran2d__item--pos::after{
+    font-family: "Timmana" , fantasy;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    content: "HOVER ME";
+    width: 200px;
+    height: 200px;
+    background-color: #2c0000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tran2d__item--translate:hover:after{
+    content: "transition-duration: 1.5s; ТІЛЬКИ ПРИ HOVER";
+    transform: translate(20px,40px);
+    transition-duration: 1.5s;
+    transition-property: all;
+}
+.tran2d__item--translate2:hover:after{
+    content: " transition-timing-function: cubic-bezier(0.105, 0.685, 1.000, -0.470);  ТІЛЬКИ ПРИ HOVER";
+    transform: translate(60%,10%);
+    transition-duration: 2.5s;
+    transition-timing-function: cubic-bezier(0.105, 0.685, 1.000, -0.470);
+}
+
+.tran2d__item--translate3:hover:after{
+    content: "transition: all 0.8s ease 0s; ТІЛЬКИ ПРИ HOVER";
+    transform: translateX(200px);
+    transition: all 0.8s ease 0s;
+}
+.cub{
+
+}
+
+.cub__wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.cub__running{
+    padding: 50px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #75000054;
+    animation: cub 3s  cubic-bezier(0.105, 0.685, 1.000, -0.470) infinite  alternate ;
+} 
+.cub__running:hover{
+
+    animation-play-state: paused;
+}
+@keyframes cub {
+    0% {
+        transform: rotate(0deg);
+        transform: translateX(0px);
+        
+    }
+    100% {
+        transform: rotate(110deg);
+        transform: translateX(1200px);
+    }
+}
+
+.place{
+    position: relative;
+    margin:   0 auto;
+    width: 1200px;
+    height: 400px ;
+    
+}
+
+.figure-cat{
+    height: 100px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 40px;
+}
+
+
+.figure-cat__head--pos{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.figure-cat__body--pos{
+    position: relative;
+    margin-top: -40px;
+    width: 70px;
+    height: 80px;
+    border-radius: 45px;
+    background-color: grey;
+}
+
+.figure-cat__eye1--pos{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: 5px;
+    width: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.figure-cat__eye2--pos{
+    border-radius: 10px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    height: 5px;
+    width: 5px;
+    background-color: aqua;
+}
+
+.figure-cat__arm1--pos{
+    z-index: 2;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 30%;
+    left: 60%;
+    width: 20px;
+    height: 30px;
+    border-radius: 45px;
+    background-color:grey;
+    border: 1px solid black;
+    transform-origin:bottom right;
+    animation: cutting 1.2s cubic-bezier(1.000, -0.600, 0.750, 0.640)  infinite
+    alternate 0.5s ;
+
+}
+
+
+@keyframes cutting {
+    0% {
+        transform: rotate(15deg);
+    }
+    95% {
+        transform: rotate(110deg);
+    }
+}
+
+.figure-cat__arm1--pos::after{
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    background: url("../img/knife.svg");
+    bottom: 20px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+   
+}
+
+
+
+.figure-cat__leg1--pos{
+    margin-top: 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0px;
+    width: 20px;
+    height: 30px;
+    border-radius: 45px;
+    background-color:grey;
+}
+
+.figure-cat__leg2--pos{
+    margin-top: 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    border-radius: 45px;
+    background-color:grey;
+}
+.carrot{
+    font-size: 0;
+}
+.carrot--pos{
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+}
+
+.carrot__start--pos{
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-right: 10px solid green;
+    border-bottom: 10px solid transparent;
+
+}
+
+.carrot__midle--pos{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+}
+.carrot__end--pos{
+    animation: carrot 1.4s linear infinite  alternate  ;
+    animation-delay:1.5s;
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-left: 50px solid orangered;
+    border-bottom: 10px solid transparent;
+
+
+}
+
+
+@keyframes carrot {
+    0% {
+        transform: translateY(0px);
+    }
+    99% {
+        transform:translateY(10px);
+        transform:rotate(-20deg);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+.figure-cat-second{
+    height: 100px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    animation: run 2.4s linear infinite  alternate  ;
+}
+
+@keyframes run {
+    0% { 
+        transform: translateX(0px);
+        
+    }
+    100% {
+        transform: translateX(-900px);
+
+    }
+}
+
+.figure-cat-second__head--pos{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.figure-cat-second__eye1--pos{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: 5px;
+    width: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.figure-cat-second__eye2--pos{
+    border-radius: 10px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    height: 5px;
+    width: 5px;
+    background-color: aqua;
+}
+
+.figure-cat-second__body--pos{
+    position: relative;
+    margin-top: -40px;
+    width: 70px;
+    height: 80px;
+    border-radius: 45px;
+    background-color: grey;
+}
+
+
+.figure-cat-second__arm1--pos{
+    z-index: 2;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 30%;
+    left: 60%;
+    width: 20px;
+    height: 30px;
+    border-radius: 45px;
+    background-color:grey;
+    border: 1px solid black;
+    transform-origin:bottom right;
+}
+.figure-cat-second__arm1--pos::after{
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    background: url("../img/carrot.svg");
+    bottom: 20px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    animation: runwith 2.4s infinite  ;
+    opacity: 0;
+}
+
+
+
+@keyframes runwith {
+    0%{
+       
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.figure-cat-second__leg1--pos{
+    margin-top: 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0px;
+    width: 20px;
+    height: 30px;
+    border-radius: 45px;
+    background-color:grey;
+}
+
+
+.figure-cat-second__leg2--pos{
+    margin-top: 0px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 0;
+    right: 0px;
+    width: 30px;
+    height: 20px;
+    border-radius: 45px;
+    background-color:grey;
+}
+
+
+.cauldron--pos{
+    bottom: 0;
+    right: -80px;
+    position: absolute;
+    background: url("../img/cauldron.svg");
+    height: 80px;
+    width: 80px;
+}
