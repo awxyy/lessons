@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="order">
+                <form action="#" class="order__container">
+                    <h1 class="order__title">Оформлення замовлення</h1>
+                    <div class="order__items ">
+                        <div class="order__item info-item-order">
+                            <div class="info-item-order__header">
+
+                                <img src="img/icon-info.svg" alt="info">
+
+                                <h2 class="info-item-order__title">
+                                    Інформація про покупця
+                                </h2>
+                            </div>
+                            <div class="info-item-order__form form-info-item-order">
+                                <div class="form-info-item-order__people">
+                                    <input type="text" required name="form[secondname]"
+                                        class="form-info-item-order__secondname" placeholder="Прізвище">
+                                    <input type="text" required name="form[name]" class="form-info-item-order__name"
+                                        placeholder="Ім'я">
+                                    <input type="text" required name="form[surname]"
+                                        class="form-info-item-order__surname" placeholder="По батькові">
+                                </div>
+                                <div class="form-info-item-order__digital-info">
+                                    <input type="tel" required name="form[tell]" class="form-info-item-order__tell"
+                                        placeholder="Контактний телефон">
+                                    <input type="email" required name="form[email]" class="form-info-item-order__email"
+                                        placeholder="E-mail">
+                                </div>
+                                <label class="form-info-item-order__checkbox checkbox-info ">
+                                    <input type="checkbox" name="form[yes]" class="checkbox-info__item">
+                                    <span class="checkbox-info__text">Отримуватиме замовлення інша людина</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__item delivery-order">
+                            <div class="delivery-order__header">
+                                <img src="img/icon-dostavka.svg" alt="delivery">
+                                <h2 class="delivery-order__title">
+                                    Вибір способу доставки
+                                </h2>
+                            </div>
+                            <div class="delivery-order__form">
+                                <div class="delivery-order__item item-delivery-order">
+                                    <input type="radio" checked value="yes" class="item-delivery-order__input"
+                                        name="form[radio-delivery]" id="radio1">
+                                    <label for="radio1" class="item-delivery-order__label">
+                                        <img src="img/shop.svg" alt="shop">
+                                        <span class="item-delivery-order__text">
+                                            <span>Самовивіз із магазину</span>
+                                            <span>Бесплатно</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="delivery-order__item item-delivery-order">
+                                    <input type="radio" value="yes" class="item-delivery-order__input"
+                                        name="form[radio-delivery]" id="radio1">
+                                    <label for="radio1" class="item-delivery-order__label">
+                                        <img src="img/np.svg" alt="shop">
+                                        <span class="item-delivery-order__text">
+                                            <span>Доставка Нова Пошта</span>
+                                            <span>≈ від 500 грн</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="delivery-order__item item-delivery-order">
+                                    <input type="radio" value="yes" class="item-delivery-order__input"
+                                        name="form[radio-delivery]" id="radio1">
+                                    <label for="radio1" class="item-delivery-order__label">
+                                        <img src="img/shop.svg" alt="shop">
+                                        <span class="item-delivery-order__text">
+                                            <span>Доставка кур'єром</span>
+                                            <span>≈ від 200 грн</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div class="map__title">
+                                <div class="map__text">
+                                    <span class="map__testtop">Графік роботи: щодня з 9:00 до 18:00</span>
+                                    <span class="map__testbottom">м. Київ, пров. Ізяславський 52, пов. 2</span>
+                                </div>
+                            </div>
+                            <a href="#" class="map__btn">
+                                <span class="map__link">На мапі</span>
+                            </a>
+                        </div>
+                        <div class="order__item payment-item-order">
+                            <div class="payment-item-order__header">
+                                <img src="img/icon-oplata.svg" alt="info">
+                                <h2 class="payment-item-order__title">
+                                    Інформація про покупця
+                                </h2>
+                            </div>
+                            <div action="#" class="payment-item-order__form">
+                                <ul class="payment-item-order__list list-payment">
+                                    <li class="list-payment__item">
+                                        <input type="radio" checked value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay1">
+                                        <label for="radiopay1" class=" list-payment__label">
+                                            Готівкою при отриманні (Післясплата)
+
+                                        </label>
+                                    </li>
+                                    <li class="list-payment__item">
+                                        <input type="radio" value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay2">
+                                        <label for="radiopay2" class=" list-payment__label">
+                                            Оплата карткою на
+                                            сайті
+                                            <img src="img/01.svg" alt="icon">
+                                            <img src="img/02.svg" alt="icon">
+                                        </label>
+                                    </li>
+                                    <li class="list-payment__item">
+                                        <input type="radio" value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay3">
+                                        <label for="radiopay3" class=" list-payment__label">
+                                            Privat Pay
+                                            <img src="img/03.svg" alt="icon">
+                                        </label>
+                                    </li>
+                                    <li class="list-payment__item">
+                                        <input type="radio" value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay4">
+                                        <label for="radiopay4" class=" list-payment__label">
+                                            Кредит від Krovato
+
+                                        </label>
+                                    </li>
+                                    <li class="list-payment__item">
+                                        <input type="radio" value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay5">
+                                        <label for="radiopay5" class=" list-payment__label">
+                                            Оплата частинами
+                                            ПриватБанк
+                                            <img src="img/04.svg" alt="icon">
+                                        </label>
+                                    </li>
+                                    <li class="list-payment__item">
+                                        <input type="radio" value="pick" class="list-payment__input"
+                                            name="form[radio-pay]" id="radiopay6">
+                                        <label for="radiopay6" class=" list-payment__label">
+                                            Оплата частинами
+                                            МоноБанк
+                                            <img src="img/05.svg" alt="icon">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="order__item comment-item-order">
+                            <div class="comment-item-order__header">
+                                <img src="img/icon-oplata.svg" alt="info">
+                                <h2 class="comment-item-order__title">
+                                    Інформація про покупця
+                                </h2>
+                            </div>
+                            <div class="comment-item-order__form">
+
+                                <textarea name="form[textarea]" id="textarea" placeholder="Ваш коментар"
+                                    class="comment-item-order__textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="order__item btn-item-order">
+                            <div class="btn-item-order__form">
+                                <button type="submit" class="btn-item-order__accept" class="">
+                                    ОФОРМИТИ ЗАМОВЛЕННЯ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
